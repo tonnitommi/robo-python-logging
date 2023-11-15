@@ -1,6 +1,6 @@
 # Awesome and automatic logging on Python
 
-Robocorp's Python automation contains a gem for anyone working on Python and wants to efficiently log the execution, debug errors and monitor things in production. It's all open source, and with these simple instructions you'll be up and running in minutes, and get these beautiful logs for every run:
+[Robocorp](https://robocorp.com/)'s [automation framework](https://github.com/robocorp/robo) contains a gem for anyone working on Python and wants to efficiently log the execution, debug errors and monitor things in production. It's all open source, and with these simple instructions you'll be up and running in minutes, and get these beautiful logs for every run:
 
 <img width="1070" alt="Screenshot 2023-11-15 at 9 25 09" src="https://github.com/tonnitommi/robo-python-logging/assets/40179958/16ceba66-2db9-49dd-b6c6-048ac06b3cda">
 
@@ -16,7 +16,7 @@ In your Python project, import the task decorator.
 from robocorp.tasks import task
 ```
 
-Then decorate your entry point with `@task`.
+Then decorate your entry point with `@task`. So basically all the executable code goes under this method, replacing any `if __name__ == "__main__"` you might have there. Notice that you can have multiple `@task`s in one file.
 
 ```py
 @task
