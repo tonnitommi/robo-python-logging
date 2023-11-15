@@ -1,0 +1,200 @@
+V 0.0.4
+T 2023-11-15T15:04:23.348+00:00
+ID 1|42dc14d6-83c8-11ee-94f0-8200ba5904ac
+I "sys.platform=darwin"
+I "python=3.11.1 (v3.11.1:a7a450f84a, Dec  6 2022, 15:24:06) [Clang 13.0.0 (clang-1300.0.29.30)]"
+M a:"my-thing.py - my_entry_point"
+SR a|0.006
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.006
+M f:"regular"
+M g:"\nCollecting task my_entry_point from: my-thing.py\n"
+C f|g|0.006
+M h:"PASS"
+ET h|e|0.007
+M j:"my_entry_point"
+M k:"my-thing"
+M l:"/Users/tommi/code/robo-python-logging/my-thing.py"
+M m:null
+P i:j|k|l|m|4
+ST i|0.007
+M n:"=========================== "
+C f|n|0.007
+M o:"Running: "
+C f|o|0.007
+M p:"task_name"
+C p|j|0.007
+M q:" ============================\n"
+C f|q|0.007
+M r:"METHOD"
+SE i|r|0.007
+M s:"stdout"
+M t:"Hello Robo!"
+C s|t|0.007
+M u:"\n"
+C s|u|0.007
+EE r|h|0.007
+C p|j|0.007
+M v:" status: "
+C f|v|0.007
+M w:"Status.PASS\n"
+C f|w|0.007
+M x:"================================================================================\n"
+C f|x|0.007
+ET h|e|0.007
+M z:"Teardown tasks"
+M A:"teardown"
+P y:z|A|e|e|0
+ST y|0.007
+M B:"Process snapshot"
+SPS B|0.007
+M C:"System information:\nMemory: Total: 16.0 G, Available: 2.7 G, Used: 83.1 %\nCPUs: 10"
+P D:e|e|e|e|0
+L I|C|D|0|0.311
+M E:"Current Process: Python (pid: 36761, status: running)\nCommand Line: /Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python -m robocorp.tasks run my-thing.py -t my_entry_point\nStarted: 09:04:23\nParent pid: 33708\nResident Set Size: 37.5 M\nVirtual Memory Size: 389.7 G"
+L I|E|D|0|0.323
+M F:"MainThread|Thread ID: 8095355648 (non daemon)"
+STD F|0.324
+M G:"/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/__init__.py"
+M H:"process_snapshot"
+M I:"robo_logger.process_snapshot()"
+TBE G|270|H|I
+M J:"logger_instances"
+M K:"dict"
+M L:"{<robocorp.log._robo_logger._RoboLogger object at 0x100b0ad10>: 1}"
+TBV J|K|L
+M M:"robo_logger"
+M N:"_RoboLogger"
+M O:"<robocorp.log._robo_logger._RoboLogger object at 0x100b0ad10>"
+TBV M|N|O
+M P:"/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/_robo_logger.py"
+M Q:"new_func"
+M R:"return func(self, *args, **kwargs)"
+TBE P|20|Q|R
+M S:"self"
+TBV S|N|O
+M T:"args"
+M U:"tuple"
+M V:"()"
+TBV T|U|V
+M W:"kwargs"
+M X:"{}"
+TBV W|K|X
+M Y:"func"
+M Z:"function"
+M 0:"<function _RoboLogger.process_snapshot at 0x100f3b060>"
+TBV Y|Z|0
+M 1:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE P|416|H|1
+TBV S|N|O
+M 2:"hide_vars"
+M 3:"bool"
+M 4:"False"
+TBV 2|3|4
+M 5:"/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/_robo_output_impl.py"
+M 6:"self._dump_threads(hide_vars)"
+TBE 5|738|H|6
+M 7:"_RoboOutputImpl"
+M 8:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x1003f4d50>"
+TBV S|7|8
+TBV 2|3|4
+M 9:"log"
+M aa:"module"
+M ab:"<module 'robocorp.log' from '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/__init__.py'>"
+TBV 9|aa|ab
+M ac:"entry_id"
+M ad:"str"
+M ae:"'ps_0'"
+TBV ac|ad|ae
+M af:"entry_type"
+M ag:"'process_snapshot'"
+TBV af|ad|ag
+M ah:"psutil"
+M ai:"<module 'psutil' from '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/psutil/__init__.py'>"
+TBV ah|aa|ai
+M aj:"AccessDenied"
+M ak:"type"
+M al:"<class 'psutil.AccessDenied'>"
+TBV aj|ak|al
+M am:"NoSuchProcess"
+M an:"<class 'psutil.NoSuchProcess'>"
+TBV am|ak|an
+M ao:"ZombieProcess"
+M ap:"<class 'psutil.ZombieProcess'>"
+TBV ao|ak|ap
+M aq:"curr_process"
+M ar:"Process"
+M as:"psutil.Process(pid=36761, name='Python', status='running', started='09:04:23')"
+TBV aq|ar|as
+M at:"log_info"
+M au:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x100f38d60>"
+TBV at|Z|au
+M av:"memory_info"
+M aw:"'Total: 16.0 G, Available: 2.7 G, Used: 83.1 %'"
+TBV av|ad|aw
+M ax:"child_i"
+M ay:"int"
+M az:"0"
+TBV ax|ay|az
+M aA:"child"
+TBV aA|ar|as
+M aB:"name"
+M aC:"'Python'"
+TBV aB|ad|aC
+M aD:"status"
+M aE:"'running'"
+TBV aD|ad|aE
+M aF:"create_time"
+M aG:"'09:04:23'"
+TBV aF|ad|aG
+M aH:"ppid"
+M aI:"'33708'"
+TBV aH|ad|aI
+M aJ:"cmdline"
+M aK:"'/Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python -m robocorp.tasks run my-thing.py -t my_entry_point'"
+TBV aJ|ad|aK
+M aL:"rss"
+M aM:"'37.5 M'"
+TBV aL|ad|aM
+M aN:"vms"
+M aO:"'389.7 G'"
+TBV aN|ad|aO
+M aP:"proc_memory_info"
+M aQ:"pmem"
+M aR:"pmem(rss=39288832, vms=418455388160, pfaults=3209, pageins=41)"
+TBV aP|aQ|aR
+M aS:"message"
+M aT:"'Current Process: Python (pid: 36761, status: running)\\nCommand Line: /Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python -m robocorp.tasks run my-thing.py -t my_entry_point\\nStarted: 09:04:23\\nParent pid: 33708\\nResident Set Size: 37.5 M\\nVirtual Memory Size: 389.7 G'"
+TBV aS|ad|aT
+M aU:"_dump_threads"
+M aV:"stack.append((f, f.f_lineno))"
+TBE 5|759|aU|aV
+TBV S|7|8
+TBV 2|3|4
+M aW:"thread_id"
+M aX:"8095355648"
+TBV aW|ay|aX
+M aY:"frame"
+M aZ:"<frame at 0x100f3cae0, file '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/_robo_output_impl.py', line 763, code _dump_threads>"
+TBV aY|aY|aZ
+M a0:"thread"
+M a1:"_MainThread"
+M a2:"<_MainThread(MainThread, started 8095355648)>"
+TBV a0|a1|a2
+M a3:"title"
+M a4:"'MainThread|Thread ID: 8095355648 (non daemon)'"
+TBV a3|ad|a4
+M a5:"f"
+M a6:"<frame at 0x13562e040, file '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/tasks/_commands.py', line 406, code run>"
+TBV a5|aY|a6
+M a7:"stack"
+M a8:"list"
+M a9:"[(<frame at 0x100eaa670, file '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x1003fcf20, file '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x100f5bcc0, file '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x100b076a0, file '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/_robo_output_impl.py', line 738, code process_snapshot>, 738), (<frame at 0x100f3cae0, file '/Users/tommi/code/robo-python-logging/venv/lib/python3.11/site-packages/robocorp/log/_robo_output_impl.py', line 763, code _dump_threads>, 759)]"
+TBV a7|a8|a9
+ETD 0.327
+EPS 0.327
+ET h|e|0.327
+ER h|0.327
